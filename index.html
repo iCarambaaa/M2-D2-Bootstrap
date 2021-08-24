@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Album Collectins</title>
+    <style>
+        /* EXERCISE 1
+            For every Album we'd like to have a consistent style.
+            Therefore you should create a class for each of the following elements:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+
+            ...to make sure you give every album the same consistent appearance.
+         */
+        .container {}
+
+        .album-container {}
+
+        .album-cover {
+            max-width: 200 px;
+        }
+
+        .album-title {}
+
+        .album-group {}
+
+        .album-genre {}
+
+        .album-duration {}
+    </style>
+</head>
+
+<body>
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page.
+        -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Album Collectins</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <!-- <h1>Album Collectins</h1> -->
+
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller viewport)
+            - 2 albums per row when you are on a small screen
+        -->
+
+    <div class="container">
+        <div class="row mt-1">
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41lHrnHDtQL.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://hiphop24x7.com/wp-content/uploads/2017/05/Today-Marks-15th-Anniversary-of-Eminems-The-Eminem-Show-Album-2.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://napalmrecords.com/pub/media/catalog/product/cache/2c98b5dedb058b51317c19b0b945bfc5/2/4/24200_trivium_vengeance_falls_cd_metalcore.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81EsDr0An5L._SL1200_.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41lHrnHDtQL.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://hiphop24x7.com/wp-content/uploads/2017/05/Today-Marks-15th-Anniversary-of-Eminems-The-Eminem-Show-Album-2.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://napalmrecords.com/pub/media/catalog/product/cache/2c98b5dedb058b51317c19b0b945bfc5/2/4/24200_trivium_vengeance_falls_cd_metalcore.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+                <div class="card mt-3">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81EsDr0An5L._SL1200_.jpg"
+                        class="card-img-top album-cover" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            repudiandae aut provident recusandae nostrum! Consequatur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr><br><br>
+        <!-- EXERCISE 4
+            Create a section for the album reviews.
+            Pick one of your favourite albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Duration
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+        <section>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-xl-4">
+                    <img src="https://hiphop24x7.com/wp-content/uploads/2017/05/Today-Marks-15th-Anniversary-of-Eminems-The-Eminem-Show-Album-2.jpg"
+                        alt="Eminem Show">
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
